@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2027">
+        <animate attributeName="stop-color" values="#0f2027;#1a2a6c;#0f2027" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#203a43">
+        <animate attributeName="stop-color" values="#203a43;#16404f;#203a43" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#2c5364">
+        <animate attributeName="stop-color" values="#2c5364;#1f6f8b;#2c5364" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7ee787" stop-opacity="0.25"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="1200" height="260" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="260" fill="url(#bg)"/>
+    <g fill="#ffffff">
+      <circle cx="120" cy="60" r="2" opacity="0.5"><animate attributeName="cy" values="60;40;60" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="300" cy="190" r="1.5" opacity="0.4"><animate attributeName="cy" values="190;170;190" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="520" cy="40" r="2" opacity="0.4"><animate attributeName="cy" values="40;60;40" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="860" cy="70" r="1.8" opacity="0.5"><animate attributeName="cy" values="70;50;70" dur="6.5s" repeatCount="indefinite"/></circle>
+      <circle cx="1050" cy="150" r="2" opacity="0.4"><animate attributeName="cy" values="150;130;150" dur="7.5s" repeatCount="indefinite"/></circle>
+      <circle cx="980" cy="40" r="1.4" opacity="0.5"><animate attributeName="cy" values="40;55;40" dur="5.5s" repeatCount="indefinite"/></circle>
+    </g>
+    <path fill="url(#wave)" d="M0 200 Q150 170 300 200 T600 200 T900 200 T1200 200 T1500 200 T1800 200 T2100 200 T2400 200 V260 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-600 0" dur="12s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#0d1117" fill-opacity="0.35" d="M0 220 Q150 245 300 220 T600 220 T900 220 T1200 220 T1500 220 T1800 220 T2100 220 T2400 220 V260 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="-600 0" to="0 0" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <text x="600" y="115" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#ffffff" opacity="0">Ozan Şanlı<animate attributeName="opacity" from="0" to="1" dur="1.5s" fill="freeze"/></text>
+    <text x="600" y="160" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#c9d1d9" opacity="0">Data &amp; Information Engineering · M.Sc. @ Hacettepe University<animate attributeName="opacity" from="0" to="1" begin="0.8s" dur="1.5s" fill="freeze"/></text>
+  </g>
+</svg>
